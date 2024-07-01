@@ -2,8 +2,8 @@ package com.example.JWTAuthenticationSpringboot.models;
 
 import lombok.*;
 
-@Getter
-@Setter
+@Getter(value = AccessLevel.PUBLIC)
+@Setter(value = AccessLevel.PUBLIC)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

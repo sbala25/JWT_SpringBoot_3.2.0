@@ -124,6 +124,29 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "unauthorized",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/JWT-Authentication-Springboot/unauthorized/hello",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"JWT-Authentication-Springboot",
+						"unauthorized",
+						"hello"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

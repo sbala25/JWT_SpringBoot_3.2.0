@@ -23,7 +23,7 @@ public class SecurityConfig {
         http.csrf(csrf->csrf.disable())
                 .cors(cors->cors.disable())
                 .authorizeHttpRequests(auth->auth.requestMatchers("/home/**", "/api/**").authenticated()
-                        .requestMatchers("/auth/login").permitAll().anyRequest()
+                        .requestMatchers("/auth/login", "/unauthorized/**").permitAll().anyRequest()
                         .authenticated())
                         .exceptionHandling(ex->ex.authenticationEntryPoint(point))
                         .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
