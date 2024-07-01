@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "9309d81e-39c4-4025-912b-f632a76fb993",
+		"name": "JWT_springboot_3.2.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32306188"
+	},
+	"item": [
+		{
+			"name": "user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmF0aGlrc2hhIiwiaWF0IjoxNzE5NzkwNjY3LCJleHAiOjE3MTk4MDg2Njd9.bOFj5nfNQiV0bS7D_Qj9KrXZzvJ6BL_RdZBO8RZlEJOUqaI_phFBIbYVC2IVUkyVdJANs7saz2m2XZ1Scb_TXQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/JWT-Authentication-Springboot/home/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"JWT-Authentication-Springboot",
+						"home",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmF0aGlrc2hhIiwiaWF0IjoxNzE5NzkwNjY3LCJleHAiOjE3MTk4MDg2Njd9.bOFj5nfNQiV0bS7D_Qj9KrXZzvJ6BL_RdZBO8RZlEJOUqaI_phFBIbYVC2IVUkyVdJANs7saz2m2XZ1Scb_TXQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/JWT-Authentication-Springboot/api/test",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"JWT-Authentication-Springboot",
+						"api",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "current-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmF0aGlrc2hhIiwiaWF0IjoxNzE5NzkwNjY3LCJleHAiOjE3MTk4MDg2Njd9.bOFj5nfNQiV0bS7D_Qj9KrXZzvJ6BL_RdZBO8RZlEJOUqaI_phFBIbYVC2IVUkyVdJANs7saz2m2XZ1Scb_TXQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/JWT-Authentication-Springboot/home/current-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"JWT-Authentication-Springboot",
+						"home",
+						"current-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"prathiksha\",\r\n    \"password\": \"abc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/JWT-Authentication-Springboot/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"JWT-Authentication-Springboot",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
